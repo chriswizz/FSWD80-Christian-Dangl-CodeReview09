@@ -26,7 +26,7 @@ WHERE categories.name = "P"
 GROUP BY customers.customer_id;
 
 
---how many reservations hat additional charges?
+--how many reservations had additional charges?
 
 SELECT COUNT(*)
 FROM reservations
@@ -34,7 +34,7 @@ INNER JOIN additional_charges ON reservations.fk_additional_charge_id = addition
 WHERE additional_charges.price > 0;
 
 
---how many reservations hat different start/end locations and who are the customers?
+--how many reservations had different start/end locations and who are the customers?
 
 SELECT COUNT(*)
 FROM reservations
